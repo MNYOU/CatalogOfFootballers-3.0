@@ -1,0 +1,12 @@
+D:\Programs\C#\CatalogOfFootballers\Dal\bin\Debug\net7.0\Dal.deps.json
+D:\Programs\C#\CatalogOfFootballers\Dal\bin\Debug\net7.0\Dal.dll
+D:\Programs\C#\CatalogOfFootballers\Dal\bin\Debug\net7.0\Dal.pdb
+D:\Programs\C#\CatalogOfFootballers\Dal\obj\Debug\net7.0\Dal.csproj.AssemblyReference.cache
+D:\Programs\C#\CatalogOfFootballers\Dal\obj\Debug\net7.0\Dal.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programs\C#\CatalogOfFootballers\Dal\obj\Debug\net7.0\Dal.AssemblyInfoInputs.cache
+D:\Programs\C#\CatalogOfFootballers\Dal\obj\Debug\net7.0\Dal.AssemblyInfo.cs
+D:\Programs\C#\CatalogOfFootballers\Dal\obj\Debug\net7.0\Dal.csproj.CoreCompileInputs.cache
+D:\Programs\C#\CatalogOfFootballers\Dal\obj\Debug\net7.0\Dal.dll
+D:\Programs\C#\CatalogOfFootballers\Dal\obj\Debug\net7.0\refint\Dal.dll
+D:\Programs\C#\CatalogOfFootballers\Dal\obj\Debug\net7.0\Dal.pdb
+D:\Programs\C#\CatalogOfFootballers\Dal\obj\Debug\net7.0\ref\Dal.dll

@@ -1,0 +1,17 @@
+D:\Programs\C#\CatalogOfFootballers\Logic\bin\Debug\net7.0\Logic.deps.json
+D:\Programs\C#\CatalogOfFootballers\Logic\bin\Debug\net7.0\Logic.dll
+D:\Programs\C#\CatalogOfFootballers\Logic\bin\Debug\net7.0\Logic.pdb
+D:\Programs\C#\CatalogOfFootballers\Logic\bin\Debug\net7.0\Dal.dll
+D:\Programs\C#\CatalogOfFootballers\Logic\bin\Debug\net7.0\Infrastructure.dll
+D:\Programs\C#\CatalogOfFootballers\Logic\bin\Debug\net7.0\Dal.pdb
+D:\Programs\C#\CatalogOfFootballers\Logic\bin\Debug\net7.0\Infrastructure.pdb
+D:\Programs\C#\CatalogOfFootballers\Logic\obj\Debug\net7.0\Logic.csproj.AssemblyReference.cache
+D:\Programs\C#\CatalogOfFootballers\Logic\obj\Debug\net7.0\Logic.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programs\C#\CatalogOfFootballers\Logic\obj\Debug\net7.0\Logic.AssemblyInfoInputs.cache
+D:\Programs\C#\CatalogOfFootballers\Logic\obj\Debug\net7.0\Logic.AssemblyInfo.cs
+D:\Programs\C#\CatalogOfFootballers\Logic\obj\Debug\net7.0\Logic.csproj.CoreCompileInputs.cache
+D:\Programs\C#\CatalogOfFootballers\Logic\obj\Debug\net7.0\Logic.csproj.CopyComplete
+D:\Programs\C#\CatalogOfFootballers\Logic\obj\Debug\net7.0\Logic.dll
+D:\Programs\C#\CatalogOfFootballers\Logic\obj\Debug\net7.0\refint\Logic.dll
+D:\Programs\C#\CatalogOfFootballers\Logic\obj\Debug\net7.0\Logic.pdb
+D:\Programs\C#\CatalogOfFootballers\Logic\obj\Debug\net7.0\ref\Logic.dll

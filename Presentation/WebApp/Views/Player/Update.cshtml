@@ -1,0 +1,57 @@
+﻿@using Dal.Enums
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model Logic.Models.Requests.CreatePlayerRequest
+
+@{
+    ViewBag.Title = "Редактирование";
+
+    var birthday = Model?.Birthday?.ToString("yyyy-MM-dd");
+}
+
+<h2>Редактировать футболиста</h2>
+
+<form asp-controller="Player" asp-action="Update" method="post" asp-route-id="@ViewContext.RouteData.Values["id"]">
+    <div class="form-group">
+        <label asp-for="FirstName" class="text-field_label"></label>
+        <span asp-validation-for="FirstName" class="text-danger"></span>
+        <input asp-for="FirstName" class="text-field_input">
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName" class="text-field_label"></label>
+        <span asp-validation-for="LastName" class="text-danger"></span>
+        <input asp-for="LastName" class="text-field_input" value="@Model?.LastName">
+    </div>
+    <div class="form-group">
+        <label asp-for="Gender" class="text-field_label"></label>
+        <span asp-validation-for="Gender" class="text-danger"></span>
+        <select asp-for="Gender" asp-items="@Html.GetEnumSelectList<Gender>()">
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="Birthday" class="text-field_label"></label>
+        <span asp-validation-for="Birthday" class="text-danger"></span>
+        <input asp-for="Birthday" class="text-field_input" value="@birthday">
+    </div>
+    <div class="form-group">
+        <label asp-for="Team.Name" class="text-field_label"></label>
+        <span asp-validation-for="Team.Name" class="text-danger"></span>
+        <input asp-for="Team.Name" class="text-field_input" list="teams">
+        <datalist id="teams">
+            @if (ViewData["teams"] is IEnumerable<TeamView> teams)
+            {
+                foreach (var team in teams)
+                {
+                    <option value="@team.Name" selected="@(team.Name == Model?.Team?.Name ? "selected" : "")"></option>
+                }
+            }
+        </datalist>
+    </div>
+    <div class="form-group">
+        <label asp-for="Country" class="text-field_label"></label>
+        <span asp-validation-for="Country" class="text-danger"></span>
+        <select asp-for="Country" asp-items="@Html.GetEnumSelectList<Country>()">
+        </select>
+    </div>
+    <input class="btn" type="submit" value="Сохранить изменения"/>
+    <a class="btn" asp-controller="Player" asp-action="GetAll">Вернуться к списку</a>
+</form>

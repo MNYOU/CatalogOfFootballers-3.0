@@ -1,0 +1,109 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+h2 {
+    margin: 23px 0;
+}
+
+.icon {
+    margin: 14px;
+}
+
+.container {
+    min-height: 700px;
+}
+
+.inline {
+    display: inline;
+}
+
+.text-field_label {
+    display: inline-block;
+}
+
+.text-field_input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+.text-field_input:hover {
+    border: 1px solid #aaa;
+}
+
+.button {
+    appearance: none;
+    -webkit-appearance: none;
+
+    padding: 10px;
+    border: none;
+    background-color: #3F51B5;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 100%;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+
+    margin: 10px 0;
+}
+
+.btn {
+    font-weight: 400;
+    display: inline-block;
+    background-color: #3F51B5;
+    color: #fff;
+    height: 40px;
+    vertical-align: middle;
+
+    padding: 8px 13px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+
+    border: none;
+    border-radius: 10px;
+    transition: background-color .15s ease-in-out;
+    margin: 10px 10px 10px 0;
+}
+
+.btn:hover {
+    background-color: #bdbdbd;
+    color: #212529;
+}
+
+td {
+    vertical-align: middle;
+}

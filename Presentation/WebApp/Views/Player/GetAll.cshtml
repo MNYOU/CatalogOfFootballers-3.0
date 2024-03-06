@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Logic.Models.Responses.PlayerView>?
+
+@{
+    ViewBag.Title = "Список футболистов ";
+}
+
+<div>
+    <h2>Актуальный список добавленных футболистов</h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(x => x.FirstName)</th>
+            <th>@Html.DisplayNameFor(x => x.LastName)</th>
+            <th>@Html.DisplayNameFor(x => x.Gender)</th>
+            <th>@Html.DisplayNameFor(x => x.Birthday)</th>
+            <th>@Html.DisplayNameFor(x => x.Team)</th>
+            <th>@Html.DisplayNameFor(x => x.Country)</th>
+            <td></td>
+        </tr>
+        </thead>
+        <tbody>
+        @if (Model != null)
+        {
+            @foreach (var footballer in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(x => footballer.FirstName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(x => footballer.LastName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(x => footballer.Gender)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(x => footballer.Birthday)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(x => footballer.Team.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(x => footballer.Country)
+                    </td>
+                    <td>
+                        <form class="inline" asp-action="Update" method="get" asp-route-id="@footballer.Id">
+                            <input class="btn" type="submit" value="Редактировать">
+                        </form>
+                        <form class="inline" asp-action="Delete" method="post" asp-route-id="@footballer.Id">
+                            <input class="btn" type="submit" value="Удалить">
+                        </form>
+
+                    </td>
+                </tr>
+            }
+        }
+        </tbody>
+    </table>
+</div>
